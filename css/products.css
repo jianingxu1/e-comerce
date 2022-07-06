@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');
+
+:root {
+    --light-grey: rgb(235, 235, 235);
+    --min-height-value: calc(100vh - 120px);
+}
+
+* {
+    margin: none;
+    padding: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a, a:hover, a:active, a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover, a:active, a:focus {
+    color: rgb(154, 152, 152);
+}
+
+body {
+    min-height: 100vh;
+}
+
+header, footer {
+    padding: 12px 60px;
+}
+
+/* HEADER */
+header {
+    min-height: 60px;
+    background-color: var(--light-grey);
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-brand-name {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+li .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PRODUCTS */
+.products {
+    min-height: var(--min-height-value);
+    padding: 24px;    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.products-title {
+    font-weight: 700;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--light-grey);
+    padding: 10px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 10px 6%;
+}
+
+.card-heart {
+    color: var(--light-grey);
+    position: absolute;
+    top: -6px;
+    right: -14px;
+}
+
+.card-heart:hover, .card-heart:active, .card-heart:focus {
+    color: rgb(171, 171, 171);
+}
+
+.card-quantity-control {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card-quantity-control button {
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+}
+
+.card-quantity {
+    height: 30px;
+    width: 140px;
+    border-radius: 9px;
+    text-align: center;
+}
+
+.card-button:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+/* FOOTER */
+footer {
+    min-height: 60px;
+    border-top: 1px solid var(--light-grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .navigation-button, .navigation-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation-items {
+        padding-top: 10px;
+        gap: 10px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .footer-about,
+    .footer-social-media,
+    .footer-faq {
+        justify-content: center !important;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .navigation-brand {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation-button {
+        width: 100%;
+    }
+}

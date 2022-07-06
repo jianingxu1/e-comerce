@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/23f9b8ca94.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="./js/log-in-submission.js"></script>
+        <title>Account | Art Academy</title>
+    </head>
+<body>
+    <header class="d-flex justify-content-between align-items-center">
+            <a class="navigation-brand d-flex" href="index.html">
+                <img src="./img/artist-icon.jpeg" height="34px" width="34px" alt="logo">
+                <h2 class="navbar-brand-name">ART ACADEMY</h2>
+            </a>
+            <a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>  Log in</a>
+    </header>
+    <section class="central-section d-flex justify-content-center align-items-center">
+        <form class="log-in-form" id="log-in-form" name="log-in-form">
+            <fieldset class="d-flex flex-column align-items-center gap-2">
+                <div>
+                    <label for="form-username">Username: </label>
+                    <input type=”text” name="form-username" id="form-username" placeholder="manolito">
+                </div>
+                <div id="error-username"></div>
+                <div>
+                    <label for="form-password">Password: </label>
+                    <input type="password" name="form-password" id="form-password" placeholder="*****">
+                </div>
+                <div id="error-password"></div>
+                <button type="submit" name="form-submit">Submit</button>
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <div class="row w-100">
+            <a href="#" class="footer-about col d-flex">About Us</a>
+            <div class="footer-social-media col-7 d-flex justify-content-center gap-3">
+                <a href=""><i class="fa-brands fa-youtube-square fa-2x"></i></a>
+                <a href=""><i class="fa-brands fa-instagram-square fa-2x"></i></a>
+                <a href=""><i class="fa-brands fa-twitter-square fa-2x"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            </div>
+            <a href="#" class="footer-faq col d-flex justify-content-end">FAQ</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

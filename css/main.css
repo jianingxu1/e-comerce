@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');
+
+:root {
+    --light-grey: rgb(235, 235, 235);
+    --min-height-value: calc(100vh - 120px);
+}
+
+* {
+    margin: none;
+    padding: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a, a:hover, a:active, a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover, a:active, a:focus {
+    color: rgb(154, 152, 152);
+}
+
+body {
+    min-height: 100vh;
+}
+
+header, footer {
+    padding: 12px 60px;
+}
+
+/* HEADER */
+header {
+    min-height: 60px;
+    background-color: var(--light-grey);
+}
+
+.navigation-brand {
+    align-content: center;
+}
+
+.navbar-brand-name {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+/* BODY */
+.central-section {
+    min-height: var(--min-height-value);
+    padding: 10px;
+}
+
+.log-in-form {
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 20px
+}
+
+/* FOOTER */
+footer {
+    min-height: 60px;
+    border-top: 1px solid var(--light-grey);
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .footer-about,
+    .footer-social-media,
+    .footer-faq {
+        justify-content: center !important;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .navigation-brand {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
