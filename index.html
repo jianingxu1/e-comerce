@@ -7,8 +7,9 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/23f9b8ca94.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./css/main.css">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="./js/log-in-submission.js"></script>
+        <script src="./js/login.js"></script>
         <title>Account | Art Academy</title>
     </head>
 <body>
@@ -17,23 +18,21 @@
                 <img src="./img/artist-icon.jpeg" height="34px" width="34px" alt="logo">
                 <h2 class="navbar-brand-name">ART ACADEMY</h2>
             </a>
+            <!-- <a href="home.html"><i class="fa-solid fa-house"></i>Home</a> -->
             <a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>  Log in</a>
     </header>
     <section class="central-section d-flex justify-content-center align-items-center">
-        <form class="log-in-form" id="log-in-form" name="log-in-form">
-            <fieldset class="d-flex flex-column align-items-center gap-2">
-                <div>
-                    <label for="form-username">Username: </label>
-                    <input type=”text” name="form-username" id="form-username" placeholder="manolito">
-                </div>
-                <div id="error-username"></div>
-                <div>
-                    <label for="form-password">Password: </label>
-                    <input type="password" name="form-password" id="form-password" placeholder="*****">
-                </div>
-                <div id="error-password"></div>
-                <button type="submit" name="form-submit">Submit</button>
-            </fieldset>
+        <form class="login-form d-flex flex-column align-items-center gap-2" id="login-form" name="login-form">
+            <div>
+                <label for="form-username">Username: </label>
+                <input type=”text” name="form-username" id="form-username" placeholder="manolito">
+            </div>
+            <div>
+                <label for="form-password">Password: </label>
+                <input type="password" name="form-password" id="form-password" placeholder="*****">
+            </div>
+            <button type="submit" name="form-submit">Submit</button>
+            <div><a href="sign-up">Create an account</a></div>
         </form>
     </section>
     <footer>
